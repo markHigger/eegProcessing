@@ -1,0 +1,297 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration file="/Users/markhigger/Documents/NKI/mHigger_NKI/EEG_Preprocessing/Python/PreProcPkg_v5_3.prj" location="/Users/markhigger/Documents/NKI/mHigger_NKI/EEG_Preprocessing/Python" name="PreProcPkg_v5_3" target="target.ezdeploy.library" target-name="Library Compiler">
+    <param.appname>PreProcPkg_v5_3</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>5.3</param.version>
+    <param.authnamewatermark>Mark Higger</param.authnamewatermark>
+    <param.email>markbhigger@gmail.com</param.email>
+    <param.company>NKI</param.company>
+    <param.summary />
+    <param.description />
+    <param.screenshot />
+    <param.guid />
+    <param.installpath.string>/NKI/PreProcPkg_v5_3/</param.installpath.string>
+    <param.installpath.combo>option.installpath.systemwideapp</param.installpath.combo>
+    <param.logo />
+    <param.install.notes>In the following directions, replace MR by the directory where MATLAB or the MATLAB Runtime is installed on the target machine.
+
+If the environment variable DYLD_LIBRARY_PATH is undefined, set it to the following string:
+
+MR/v93/runtime/maci64:MR/v93/sys/os/maci64:MR/v93/bin/maci64
+
+If it is defined, set it to the following:
+
+${DYLD_LIBRARY_PATH}:MR/v93/runtime/maci64:MR/v93/sys/os/maci64:MR/v93/bin/maci64</param.install.notes>
+    <param.target.install.notes>You must have Python 2.7, 3.4, 3.5, and/or 3.6 on your machine to install this package. Go to the directory to which setup.py and your package have been written. Then execute:
+
+        python setup.py install [options]
+
+For details, see the readme.txt distributed with this package.</param.target.install.notes>
+    <param.intermediate>${PROJECT_ROOT}/PreProcPkg_v5_3/for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}/PreProcPkg_v5_3/for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}/PreProcPkg_v5_3/for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}/PreProcPkg_v5_3</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.python.module</param.target.type>
+    <param.support.packages />
+    <param.namespace />
+    <param.classorg />
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>false</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <param.user.only.registration>false</param.user.only.registration>
+    <param.assembly.type>false</param.assembly.type>
+    <param.encryption.key.file />
+    <param.net.enable.remoting>false</param.net.enable.remoting>
+    <param.net.tsa.enable>false</param.net.tsa.enable>
+    <param.net.tsa.assembly />
+    <param.net.tsa.interface />
+    <param.net.tsa.namespace />
+    <param.net.tsa.superclass>Class1</param.net.tsa.superclass>
+    <param.net.tsa.metadata />
+    <param.net.tsa.metadata.assembly>/Users/markhigger/Documents/MATLAB</param.net.tsa.metadata.assembly>
+    <param.net.saved.interface />
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.summary />
+      <param.description />
+      <param.screenshot />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.support.packages />
+      <param.namespace />
+      <param.classorg />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+      <param.user.only.registration />
+      <param.assembly.type />
+      <param.encryption.key.file />
+      <param.net.enable.remoting />
+      <param.net.tsa.enable />
+      <param.net.tsa.assembly />
+      <param.net.tsa.interface />
+      <param.net.tsa.namespace />
+      <param.net.tsa.superclass />
+      <param.net.tsa.metadata />
+      <param.net.tsa.metadata.assembly />
+      <param.net.saved.interface />
+    </unset>
+    <fileset.exports>
+      <file>${PROJECT_ROOT}/MatFiles/BV2Set_Wrap.m</file>
+      <file>${PROJECT_ROOT}/MatFiles/Bandpass_Mat_Wrap.m</file>
+      <file>${PROJECT_ROOT}/MatFiles/GA_Removal_Wrap.m</file>
+      <file>${PROJECT_ROOT}/MatFiles/Notch_Mat_Wrap.m</file>
+      <file>${PROJECT_ROOT}/MatFiles/PA_Removal_Wrap.m</file>
+      <file>${PROJECT_ROOT}/MatFiles/Resample_Mat_Wrap.m</file>
+    </fileset.exports>
+    <fileset.classes>
+      <entity.package name="">
+        <entity.class name="Class1">
+          <file>${PROJECT_ROOT}/MatFiles/Bandpass_Mat_Wrap.m</file>
+          <file>${PROJECT_ROOT}/MatFiles/BV2Set_Wrap.m</file>
+          <file>${PROJECT_ROOT}/MatFiles/GA_Removal_Wrap.m</file>
+          <file>${PROJECT_ROOT}/MatFiles/Notch_Mat_Wrap.m</file>
+          <file>${PROJECT_ROOT}/MatFiles/PA_Removal_Wrap.m</file>
+          <file>${PROJECT_ROOT}/MatFiles/Resample_Mat_Wrap.m</file>
+        </entity.class>
+      </entity.package>
+    </fileset.classes>
+    <fileset.resources>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/EEG_PreProc_funs/fmrib1.21/fmrib_fastr.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/EEG_PreProc_funs/fmrib1.21/fmrib_pas.m</file>
+    </fileset.resources>
+    <fileset.depfun>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/CompilerFuncs/pop_fmrib_qrsdetect_comp.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/CompilerFuncs/pop_resample_comp.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/EEG_PreProc_funs/GetEvt.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/EEG_PreProc_funs/RemoveMRI_PA.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/EEG_PreProc_funs/removeBCG.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@eegobj/display.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@eegobj/eegobj.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@eegobj/fieldnames.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@eegobj/horzcat2.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@eegobj/isfield.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@eegobj/isstruct.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@eegobj/length.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@eegobj/orderfields.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@eegobj/rmfield.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@eegobj/simpletest.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@eegobj/subsasgn.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@eegobj/subsref.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@mmo/binaryopp.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@mmo/bsxfun.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@mmo/changefile.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@mmo/checkcopies_local.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@mmo/checkworkspace.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@mmo/ctranspose.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@mmo/display.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@mmo/double.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@mmo/end.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@mmo/fft.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@mmo/isnumeric.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@mmo/length.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@mmo/mmo.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@mmo/ndims.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@mmo/permute.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@mmo/reshape.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@mmo/size.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@mmo/subsasgn.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@mmo/subsasgn_old.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@mmo/subsref.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@mmo/sum.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@mmo/transpose.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@mmo/unitaryopp.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/@mmo/var.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/adminfunc/eeg_checkchanlocs.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/adminfunc/eeg_checkset.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/adminfunc/eeg_eval.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/adminfunc/eeg_getdatact.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/adminfunc/eeg_getversion.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/adminfunc/eeg_hist.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/adminfunc/eeg_options.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/adminfunc/eeg_optionsbackup.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/adminfunc/eeg_retrieve.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/adminfunc/eeg_store.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/adminfunc/eeglab_options.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/adminfunc/eeglabexefolder.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/adminfunc/error_bc.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/adminfunc/intersect_bc.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/adminfunc/is_sccn.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/adminfunc/iseeglabdeployed.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/adminfunc/ismatlab.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/adminfunc/ismember_bc.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/adminfunc/setdiff_bc.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/adminfunc/union_bc.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/adminfunc/unique_bc.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/adminfunc/vararg2str.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/guifunc/errordlg2.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/guifunc/finputcheck.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/guifunc/inputdlg2.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/guifunc/inputgui.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/guifunc/pophelp.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/guifunc/questdlg2.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/guifunc/supergui.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/guifunc/warndlg2.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/miscfunc/textgui.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/popfunc/eeg_chantype.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/popfunc/eeg_decodechan.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/popfunc/eeg_eegrej.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/popfunc/eeg_emptyset.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/popfunc/eeg_insertbound.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/popfunc/eeg_insertboundold.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/popfunc/eeg_interp.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/popfunc/eeg_lat2point.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/popfunc/eeg_point2lat.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/popfunc/eeg_urlatency.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/popfunc/pop_chancenter.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/popfunc/pop_chanedit.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/popfunc/pop_editeventvals.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/popfunc/pop_importepoch.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/popfunc/pop_loadset.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/popfunc/pop_saveset.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/popfunc/pop_select.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/popfunc/pop_writelocs.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/adjustlocs.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/chancenter.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/convertlocs.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/eegfilt.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/eegrej.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/epoch.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/fastif.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/floatwrite.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/forcelocs.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/gettempfolder.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/icadefs.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/isscript.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/loadtxt.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/mattocell.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/parsetxt.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/plotchans3d.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/readeetraklocs.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/readelp.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/readlocs.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/readneurolocs.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/readtxtfile.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/slider.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/sph2topo.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/topo2sph.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/topoplot.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/uigetfile2.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/uiputfile2.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/sigprocfunc/writelocs.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/functions/studyfunc/std_chaninds.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/plugins/bva-io1.5.13/parsebvmrk.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/plugins/bva-io1.5.13/pop_loadbv.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/plugins/bva-io1.5.13/readbvconf.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/plugins/dipfit2.3/dipfitdefs.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/plugins/fMRIb2.00/decimate2.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/plugins/fMRIb2.00/fastranc.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/plugins/fMRIb2.00/fmrib_qrsdetect.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/plugins/fMRIb2.00/guifastr.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/plugins/fMRIb2.00/guipas.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/plugins/fMRIb2.00/pca_calc.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/plugins/fMRIb2.00/pop_fmrib_fastr.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/plugins/fMRIb2.00/pop_fmrib_pas.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/plugins/fMRIb2.00/prcorr2.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/plugins/fMRIb2.00/qrscorrect.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/plugins/fMRIb2.00/trigcorrect.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/plugins/firfilt1.6.2/firfiltdcpadded.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/plugins/firfilt1.6.2/firws.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/plugins/firfilt1.6.2/pop_firwsord.m</file>
+      <file>/Users/markhigger/Documents/MATLAB/TOOLBOX/eeglab14_1_2b/plugins/firfilt1.6.2/windows.m</file>
+    </fileset.depfun>
+    <fileset.package />
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}/PreProcPkg_v5_3/for_testing" name="readme.txt" optional="true">/Users/markhigger/Documents/NKI/mHigger_NKI/EEG_Preprocessing/Python/PreProcPkg_v5_3/for_testing/readme.txt</file>
+      <file location="${PROJECT_ROOT}/PreProcPkg_v5_3/for_testing" name="PreProcPkg_v5_3" optional="false">/Users/markhigger/Documents/NKI/mHigger_NKI/EEG_Preprocessing/Python/PreProcPkg_v5_3/for_testing/PreProcPkg_v5_3</file>
+      <file location="${PROJECT_ROOT}/PreProcPkg_v5_3/for_testing" name="setup.py" optional="false">/Users/markhigger/Documents/NKI/mHigger_NKI/EEG_Preprocessing/Python/PreProcPkg_v5_3/for_testing/setup.py</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/Applications/MATLAB_R2017b.app</root>
+      <toolboxes />
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>true</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.12.6</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>maci64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
