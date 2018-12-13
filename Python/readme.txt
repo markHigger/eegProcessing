@@ -8,6 +8,3 @@ PreProc_MatFun_Wraps.py is a set of wrappers for the eeg preprocessing functions
 Matpy_Preproc.py is a pipeline script, you can edit file names and directories at the bottom of the script
 
 the Matfiles folder contains the up-to-date m files that are compiled
-
-For future updates go to 
-https://github.com/markHigger/mHigger_NKI/tree/master/EEG_Preprocessing/Python
