@@ -27,3 +27,15 @@ To Run Matlab:
 	
 	*Please note that this method requires use of a wrapper script for FMRIB from ... that cannot be put on GITHUB, feel free to contact me at markbhigger@gmail.com for more information
 6. For individual Procoessing steps see individual file documentation
+
+Compilation instructions (Requires MATLAB Compiler and MATLAB Compiler SDK) 
+1. Open Matlab library compiler
+2. Select Python Package
+3. add files from /eegProcesing/Python/MatFiles/ to compile
+4. make sure that pop_fmrib_qrsdetect, fmrib_qrsdetect, pop_frmib_fastr, frmib_fastr, pop_fmrib_pas and fmrib_pas are all added as dependecies (sometimes Matlab does not automatically detect these files as dependecies)
+
+	*If running into issue - "eeg_checkset" needs to be removed from all pop_ methods used, sice the eeglab settings file does not compile
+
+	*For the resample function, a mex file from the DSP toolbox is used, if the computer that is running the compiled the program and the computer that compiled it use a different OS, the pop_resample function needs to be manually changed to not use that DSP toolbox resample function. 
+
+	*Please note that this method requires use of a wrapper script for FMRIB from ... that cannot be put on GITHUB, feel free to contact me at markbhigger@gmail.com for more information
