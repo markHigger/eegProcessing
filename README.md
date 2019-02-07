@@ -38,4 +38,4 @@ Compilation instructions (Requires MATLAB Compiler and MATLAB Compiler SDK)
 
 	*For the resample function, a mex file from the DSP toolbox is used, if the computer that is running the compiled the program and the computer that compiled it use a different OS, the pop_resample function needs to be manually changed to not use that DSP toolbox resample function. 
 
-	*Please note that this method requires use of a wrapper script for FMRIB from ... that cannot be put on GITHUB, feel free to contact me at markbhigger@gmail.com for more information
+	*Please note that this method requires use of a wrapper script for FMRIB from Columbia University that cannot be put on GITHUB, feel free to contact me at markbhigger@gmail.com for more information
